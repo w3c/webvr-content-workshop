@@ -30,6 +30,12 @@ body {
   margin-top: 0;
 }
 
+#top { background-image: url("brussels.jpg"); background-repeat: no-repeat; min-height:319px; color: white; position: relative;}
+
+#top h1, #top h2 { color: white; text-shadow: 1px 1px 2px black;}
+
+#top a.credit { position: absolute; bottom:0; right:0;}
+
 .footer :last-child {
   margin-bottom: 0;
 }
