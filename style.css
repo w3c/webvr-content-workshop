@@ -30,9 +30,40 @@ body {
   margin-top: 0;
 }
 
-#top { background-image: url("brussels.jpg"); background-repeat: no-repeat; min-height:319px; color: white; position: relative;}
+#top {
+  background-image: url("brussels.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 319px;
+  color: white;
+  position: relative;
+}
 
-#top h1, #top h2 { color: white; text-shadow: 1px 1px 2px black;}
+#top h1,
+#top h2 {
+  padding: 1rem;
+  color: white;
+  text-shadow: 4px 4px 20px black;
+}
+
+.highlight {
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: x-large;
+  font-weight: bolder;
+  padding: 2rem;
+  display: inline-block;
+  margin: 0;
+}
+
+.highlight p {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.highlight p:last-child {
+  margin: 0;
+}
 
 #top a.credit { position: absolute; bottom:0; right:0;}
 
@@ -50,6 +81,11 @@ dl,
 ul,
 ol {
   margin: 1.5rem 0;
+}
+
+dt.done,
+dt.done + dd {
+  color: #ccc;
 }
 
 a,
@@ -123,6 +159,7 @@ a.ref {
   margin-left: 3rem;
   padding: 1em;
   width: 19em;
+  margin-top: 2.5rem;
 }
 
 .box + .box {
@@ -166,16 +203,29 @@ a.ref {
   padding-top: .5rem;
 }
 
+.toc ul {
+  list-style: none;
+  font-size: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-left: 5px solid #005a9c;
+  padding-left: 0.5rem;
+  margin-top: 2.5rem;
+}
+
+.toc li {
+  font-size: 1rem;
+  font-weight: bold;
+  border-top: none;
+  border-left: none;
+  padding: 0.25rem;
+}
+
 .menu {
   background: #005a9c;
   font-size: 1rem;
-  margin: 0 0 2em;
-}
-
-.menu,
-.menu ul,
-.menu li {
-  width: 100%;
+  margin: 1rem 0 0;
 }
 
 .menu ul {
@@ -275,13 +325,17 @@ address {
   }
 }
 
-@media all and (max-width: 860px) {
+@media all and (max-width: 1060px) {
   html {
     padding: 0;
   }
 
   body {
     border-radius: 0;
+  }
+
+  .highlight {
+    display: block;
   }
 
   .menu ul {
