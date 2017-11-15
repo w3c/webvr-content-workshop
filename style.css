@@ -47,13 +47,12 @@ body {
 }
 
 .highlight {
-  border: 2px solid black;
+  border: 2px solid #005a9c;
   border-radius: 10px;
   font-size: x-large;
   font-weight: bolder;
   padding: 2rem;
-  display: inline-block;
-  margin: 0;
+  margin-top: 2.5rem;
 }
 
 .highlight p {
@@ -325,17 +324,13 @@ address {
   }
 }
 
-@media all and (max-width: 1060px) {
+@media all and (max-width: 930px) {
   html {
     padding: 0;
   }
 
   body {
     border-radius: 0;
-  }
-
-  .highlight {
-    display: block;
   }
 
   .menu ul {
