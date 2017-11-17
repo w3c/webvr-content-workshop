@@ -84,6 +84,7 @@ ol {
 
 dt.done,
 dt.done + dd {
+  text-decoration: line-through;
   color: #ccc;
 }
 
