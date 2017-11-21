@@ -499,6 +499,10 @@ dt.type {
   background-color: #c0d9af;
 }
 
+.type-digest {
+  background-color: rgb(236, 196, 255);
+}
+
 .type-panel {
   background-color: #ffe4e1;
 }
