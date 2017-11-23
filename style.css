@@ -84,6 +84,7 @@ ol {
 
 dt.done,
 dt.done + dd {
+  text-decoration: line-through;
   color: #ccc;
 }
 
@@ -496,6 +497,10 @@ dt.type {
 
 .type-breakout {
   background-color: #c0d9af;
+}
+
+.type-digest {
+  background-color: rgb(236, 196, 255);
 }
 
 .type-panel {
