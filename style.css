@@ -83,7 +83,10 @@ ol {
 }
 
 dt.done,
-dt.done + dd {
+dt.done + dd,
+dt.done + dd a,
+dt.done + dd + dd,
+dt.done + dd + dd a {
   text-decoration: line-through;
   color: #ccc;
 }
